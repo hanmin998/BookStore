@@ -1,0 +1,40 @@
+<!--
+MyEclipse Database Explorer Driver Repository
+-->
+
+<Beans version="1.0">
+    <Bean Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriver">
+        <driverClassName>com.mysql.jdbc.Driver</driverClassName>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>33f13872:146403c6376:-7f70</string>
+        </identifier>
+        <jarFileName/>
+        <jarFileNames Indexed="true">
+            <Bean Class="net.sourceforge.squirrel_sql.fw.util.beanwrapper.StringWrapper">
+                <string>F:\MySql\mysqldriver.jar</string>
+            </Bean>
+        </jarFileNames>
+        <name>MySQL Connector/J01</name>
+        <url>jdbc:mysql://localhost:8080/bookstore</url>
+    </Bean>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>33f13872:146403c6376:-7f70</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>33f13872:146403c6376:-7f94</string>
+        </identifier>
+        <name>mysqlConnection</name>
+        <password encryption="true">U6gh0GaqlQc=</password>
+        <promptForPassword>false</promptForPassword>
+        <schema Indexed="true">
+            <Bean Class="net.sourceforge.squirrel_sql.fw.util.beanwrapper.StringWrapper">
+                <string>bookstore</string>
+            </Bean>
+        </schema>
+        <schemaDisplayPolicy>2</schemaDisplayPolicy>
+        <url>jdbc:mysql://localhost:3306/bookstore</url>
+        <userName>root</userName>
+    </Bean>
+</Beans>
